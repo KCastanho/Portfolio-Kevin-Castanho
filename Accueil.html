@@ -4,24 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Kevin castanho</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/Accueil.css">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
     <header>
-        <div class="logo">Logo</div>
-        <div class="liens">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="A_propos.html">A propos</a></li>
-                    <div class="barre"></div>
-                    <li><a href="Projets.html">Projets</a></li>
-                    <li><a href="Contact.html">Contact</a></li>
-                </ul>
-            </nav>
+        <div class="header-container">
+            <div class="logo">
+                <img src="assets/images/logo_blanc.png" alt="Logo Kevin Castanho">
+            </div>
+            <button class="menu-toggle" aria-label="Menu">☰</button>
+            <div class="liens">
+                <nav>
+                    <ul>
+                        <li><a href="Accueil.html">Accueil</a></li>
+                        <li><a href="A_propos.html">À propos</a></li>
+                        <div class="barre"></div>
+                        <li><a href="Projets.html">Projets</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
@@ -29,7 +34,7 @@
         <div class="widget">
 
             <div class="carte">
-                <img class="photo" src="assets/images/DAM_2815.JPG" alt="Photo de Kevin Castanho" width="200" loading="lazy">
+                <img class="photo" src="assets/images/DAM_2815.JPG" alt="Photo de Kevin Castanho" loading="lazy">
                 <h1>Kevin Castanho</h1>
                 <p>Je suis étudiant en développement web.</p>
                 <button class="b_carte"><a href="A_propos.html">Découvrir mon parcours</a></button>
@@ -71,6 +76,10 @@
         </div>
     </main>
 
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.liens').classList.toggle('active');
+        });
+    </script>
 </body>
-
 </html>
