@@ -191,6 +191,16 @@ nav ul li a:hover, .active {
     .carte {
         grid-column: 1 / -1;
         grid-row: 1;
+        flex-direction: row;
+    }
+
+    .carte h1{
+        margin: 30px;
+    }
+
+    .carte p{
+        margin-right: 30px;
+        font-size:large;
     }
 
     .box1 { grid-column: 1 / 4; grid-row: 2; }
@@ -233,6 +243,15 @@ nav ul li a:hover, .active {
     .widget {
         grid-template-columns: 1fr;
         margin: 1rem;
+    }
+
+    .carte{
+        flex-direction: column;
+    }
+
+    .carte p{
+        font-size: 30px;
+        margin-right: 0;
     }
 
     .carte, .box1, .box2, .box3, .box4, .box5, .box6 {
